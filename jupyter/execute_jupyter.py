@@ -1,7 +1,7 @@
 import nbformat
 from nbconvert.preprocessors import ExecutePreprocessor
 
-with open('jupyter_demo.ipynb') as file:
+with open('./jupyter_demo.ipynb') as file:
     notebook = nbformat.read(file, as_version=4)
 
 processor = ExecutePreprocessor(timeout=600, kernel_name='python3')
