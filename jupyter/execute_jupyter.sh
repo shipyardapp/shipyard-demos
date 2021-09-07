@@ -1,5 +1,6 @@
 pip install jupyter
 
+echo ${PATH}
 python --version
 jupyter --version
 
