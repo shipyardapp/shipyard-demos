@@ -1,4 +1,4 @@
-pip install jupyter
+pip install --target=/usr/local/bin jupyter 
 
 echo ${PATH}
 python --version
