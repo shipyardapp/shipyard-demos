@@ -18,6 +18,6 @@ num_columns = len(column_names)
 file_name = os.environ.get('FILE_NAME','output.csv')
 
 df = pd.DataFrame(np.random.randint(min_int,max_int,size=(num_rows,num_columns)),columns=column_names)
-df.to_csv(file_name)
+df.to_csv(file_name,index=False)
 print(f'File successfully created at {file_name}')
 print(df)
