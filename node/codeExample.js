@@ -1,3 +1,23 @@
+console.log('here i am');
+
+const { execSync } = require('child_process');
+
+const stdio = execSync('ls -laR /home/shipyard');
+console.log(stdio.toString());
+
+console.log('whoami');
+
+const stdio2 = execSync('ls -laR /tmp');
+console.log(stdio2.toString());
+
+// , (err, stdout, stderr) => {
+// 	console.log(err);
+// 	console.log(stdout);
+// 	console.log(stderr);
+// });
+
+///////////////////////////////
+
 const dataForge = require('data-forge');
 require('data-forge-fs')
 const { v4: uuidv4 } = require('uuid');
@@ -23,3 +43,4 @@ df. asCSV().writeFileSync('output.csv');
 
 console.log('File output.csv successfully created')
 console.log(df.toString())
+
