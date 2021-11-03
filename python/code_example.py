@@ -9,6 +9,6 @@ print(f'''This Vessel is named "{os.environ.get("SHIPYARD_VESSEL_NAME")}" \
 and has an ID of {os.environ.get("SHIPYARD_VESSEL_ID")}''')
 
 df = pd.DataFrame(np.random.randint(1,100,size=(100000,4)),columns=list('ABCD'))
-df.to_csv('output.csv')
+df.to_csv('output.csv',index=False)
 print(f'File output.csv successfully created.')
 print(df)
