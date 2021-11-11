@@ -1,6 +1,7 @@
-{"dependencies": {
-    "uuid": "^8.3.2",
-    "data-forge": "^1.8.23",
-    "data-forge-fs": "^0.0.9",
-  }
+{
+	"dependencies": {
+		"uuid": "^8.3.2",
+		"data-forge": "^1.8.23",
+		"data-forge-fs": "^0.0.9"
+	}
 }
